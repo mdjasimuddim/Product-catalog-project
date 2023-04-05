@@ -132,7 +132,7 @@ filterInput.addEventListener('keyup', e =>{
             ++itemLength;
         }
     })
-    (itemLength > 0) ? showMessage():showMessage('No item found')
+    itemLength > 0 ? showMessage():showMessage('No item found');
 })
 
 function showMessage(Message = ''){
